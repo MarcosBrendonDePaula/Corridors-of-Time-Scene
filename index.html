@@ -10,24 +10,49 @@
 </head>
 <body>
     <img id="play_btn" class="" src="./assets/img/play-btn.svg">
-    <div class="scene">
-        <audio id="audio_player" loop>
+    <div id="controll-container">
+        <div class="button btn-back">⬅</div>
+        <img id="theme_ico">
+        <div class="button btn-prox">➡</div>
+    </div>
+    <div class="scene theme-game" data-ico="./assets/img/ico/chrono_basic.webp">
+        <audio class="audio_player" loop>
             <source src="./assets/music/Corridors of Time [HQ].mp3" type="audio/ogg">
         </audio>
         <div class="left-island">
-            <img src="./assets/styles/left_island.png">
+            <img src="./assets/img/themes/game/left_island.png">
         </div>
         <div class="top-left-plane">
-            <img src="./assets/styles/top_left_plane.png">
+            <img src="./assets/img/themes/game/top_left_plane.png">
         </div>
         <div class="central-island">
-            <img src="./assets/styles/central_island.png">
+            <img src="./assets/img/themes/game/central_island.png">
         </div>
         <div class="top-right-island">
-            <img src="./assets/styles/top_right_island.png">
+            <img src="./assets/img/themes/game/top_right_island.png">
         </div>
         <div class="bottom-right-island">
-            <img src="./assets/styles/bottom_right_island.png">
+            <img src="./assets/img/themes/game/bottom_right_island.png">
+        </div>
+    </div>  
+    <div class="scene theme-PrimeApos selected" data-ico="./assets/img/ico/pimeapos.jpg">
+        <audio class="audio_player" loop>
+            <source src="./assets/music/Corridors of Time PrimeApos.mp3" type="audio/ogg">
+        </audio>
+        <div class="left-island">
+            <img src="./assets/img/themes/PrimeApos/left_island.png">
+        </div>
+        <div class="top-left-plane">
+            <img src="./assets/img/themes/PrimeApos/top_left_plane.png">
+        </div>
+        <div class="central-island">
+            <img src="./assets/img/themes/PrimeApos/central_island.png">
+        </div>
+        <div class="top-right-island">
+            <img src="./assets/img/themes/PrimeApos/top_right_island.png">
+        </div>
+        <div class="bottom-right-island">
+            <img src="./assets/img/themes/PrimeApos/bottom_right_island.png">
         </div>
     </div>
 </body>

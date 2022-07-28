@@ -1,5 +1,27 @@
 body {
-  background-image: linear-gradient(to bottom, #357fea, #3482e9, #3485e7, #3688e6, #388be4, #2694e5, #199ce5, #19a4e3, #28b2e0, #48beda, #68c9d5, #87d3d2);
+  margin: 0;
+}
+body #controll-container {
+  display: grid;
+  position: fixed;
+  width: 11vw;
+  height: 5vw;
+  right: 2%;
+  top: 2%;
+  grid-template-columns: 33% 33% 33%;
+  background-color: rgba(240, 255, 255, 0.471);
+  border: 1px solid black;
+  border-radius: 15%;
+}
+body #controll-container .button {
+  width: 100%;
+  height: 100%;
+  font-size: 3em;
+  text-align: center;
+}
+body #controll-container #theme_ico {
+  width: 100%;
+  height: 100%;
 }
 body #play_btn {
   position: fixed;
@@ -15,6 +37,7 @@ body .hidden {
   -webkit-animation: hidden_animation 2s normal;
           animation: hidden_animation 2s normal;
   opacity: 0;
+  display: none;
 }
 @-webkit-keyframes hidden_animation {
   0% {
@@ -33,9 +56,14 @@ body .hidden {
   }
 }
 
+.selected {
+  display: block !important;
+}
+
 .scene {
-  height: 100vh;
   overflow: hidden;
+  display: none;
+  height: 100vh;
 }
 .scene div {
   position: fixed;
@@ -297,4 +325,12 @@ body .hidden {
     left: 68%;
     top: 80%;
   }
+}
+
+.theme-game {
+  background-image: linear-gradient(to bottom, #357fea, #3482e9, #3485e7, #3688e6, #388be4, #2694e5, #199ce5, #19a4e3, #28b2e0, #48beda, #68c9d5, #87d3d2);
+}
+
+.theme-PrimeApos {
+  background-color: #385294;
 }/*# sourceMappingURL=positions.css.map */
